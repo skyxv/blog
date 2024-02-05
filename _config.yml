@@ -89,32 +89,51 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include: source/
+include:
 exclude:
 ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: oliver
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
 
-favicon: https://avatars.githubusercontent.com/u/30365440?s=16&v=4
-avatar: https://avatars.githubusercontent.com/u/30365440?s=16&v=4
 
-menu:
-  Home: /
-  Archives: /archives
-  About: /about
+theme_config:
+  google_analytics:
+    enabled: false
+    id: G-4F49TZRQJT
+  
+  nav:
+    home: /
+    about: /about/
+    articles: /archives/
+  
+  projects_url: http://github.com/skyxv
 
-copyright: skyxv
+  social_links:
+    -
+      icon: github
+      link: http://github.com/skyxv
+    -
+      icon: mail
+      link: mailto:vincentyim888@gmail.com
 
-gitalk:
-  client_id: e84a5529741e575a2d7a
-  client_secret: f826a9f9f485d0cd78b8ae1abfe42120c8d84849
-  repo: blog
-  owner: skyxv
+  copyright:
+    start_year: 2017
+    end_year:
+
+  highlight: agate
+
+  logo:
+    enabled: false
+    width: 50
+    height: 50
+    url: /images/logo.png
+    gravatar: false
+    grayout: true
