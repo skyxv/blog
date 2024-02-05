@@ -89,7 +89,7 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
+include: source/
 exclude:
 ignore:
 
@@ -102,3 +102,19 @@ theme: oliver
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+favicon: https://avatars.githubusercontent.com/u/30365440?s=16&v=4
+avatar: https://avatars.githubusercontent.com/u/30365440?s=16&v=4
+
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+
+copyright: skyxv
+
+gitalk:
+  client_id: e84a5529741e575a2d7a
+  client_secret: f826a9f9f485d0cd78b8ae1abfe42120c8d84849
+  repo: blog
+  owner: skyxv
