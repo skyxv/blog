@@ -5,7 +5,7 @@
 # Site
 title: Denghong Yan 's Blog
 subtitle: ''
-description: ''
+description: 'Welcome to my blog where I share my thoughts on technology, programming, and everything in between.'
 keywords:
 author: Denghong Yan
 language: en
@@ -131,9 +131,20 @@ theme_config:
   highlight: agate
 
   logo:
-    enabled: false
+    enabled: true
     width: 50
     height: 50
-    url: /images/logo.png
+    url: /imgs/android-chrome-512x512.png
     gravatar: false
     grayout: true
+
+  favicon:
+    desktop:
+      url: /imgs/favicon.ico
+      gravatar: false
+    android:
+      url: /imgs/android-chrome-192x192.png
+      gravatar: false
+    apple:
+      url: /imgs/apple-touch-icon.png
+      gravatar: false
