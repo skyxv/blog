@@ -106,13 +106,13 @@ deploy:
 
 theme_config:
   google_analytics:
-    enabled: false
+    enabled: true
     id: G-4F49TZRQJT
   
   nav:
     home: /
-    about: /about/
     articles: /archives/
+    about: /about/
   
   projects_url: http://github.com/skyxv
 
