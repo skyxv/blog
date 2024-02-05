@@ -1,3 +1,3 @@
-[submodule "themes/oliver"]
-	path = themes/oliver
-	url = https://github.com/EvanLuo42/oliver.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = https://github.com/probberechts/hexo-theme-cactus.git
