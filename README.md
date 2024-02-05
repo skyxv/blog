@@ -1,2 +1,2 @@
-Personal Blog built by [Hexo]()
+Personal Blog built by [Hexo](https://github.com/hexojs/hexo)
 ==========
