@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,46 +105,144 @@ deploy:
 
 
 theme_config:
-  google_analytics:
-    enabled: true
-    id: G-4F49TZRQJT
+  # cactus
+  # google_analytics:
+  #   enabled: true
+  #   id: G-4F49TZRQJT
   
-  nav:
-    home: /
-    articles: /archives/
-    about: /about/
+  # nav:
+  #   home: /
+  #   articles: /archives/
+  #   about: /about/
+
+  # projects_url: http://github.com/skyxv
+
+  # social_links:
+  #   -
+  #     icon: github
+  #     link: http://github.com/skyxv
+  #   -
+  #     icon: mail
+  #     link: mailto:vincentyim888@gmail.com
+
+  # copyright:
+  #   start_year: 2017
+  #   end_year:
+
+  # highlight: agate
+
+  # logo:
+  #   enabled: true
+  #   width: 50
+  #   height: 50
+  #   url: /imgs/android-chrome-512x512.png
+  #   gravatar: false
+  #   grayout: true
+
+  # favicon:
+  #   desktop:
+  #     url: /imgs/favicon.ico
+  #     gravatar: false
+  #   android:
+  #     url: /imgs/android-chrome-192x192.png
+  #     gravatar: false
+  #   apple:
+  #     url: /imgs/apple-touch-icon.png
+  #     gravatar: false
+
+  # ascent
+  # menu:
+  #   Home: /
+  #   Archives: /archives/
+  #   About: /about/
+  #   Github: https://github.com/skyxv
   
-  projects_url: http://github.com/skyxv
+  # google_analytics:
+  #   enabled: true
+  #   acct: G-4F49TZRQJT
+  # favicon: /imgs/favicon.ico
 
-  social_links:
-    -
-      icon: github
-      link: http://github.com/skyxv
-    -
-      icon: mail
-      link: mailto:vincentyim888@gmail.com
+  # maupassant
+  # gitalk: ## See: https://github.com/gitalk/gitalk
+  #   enable: true ## If you want to use Gitment comment system please set the value to true.
+  #   owner: skyxv ## Your GitHub ID, e.g. username
+  #   repo: blog ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  #   client_id: e84a5529741e575a2d7a ## GitHub client ID, e.g. 75752dafe7907a897619
+  #   client_secret: a85723de25f3609c54f25af29d8ff8239917e478 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  #   admin: skyxv ## Github repo owner and collaborators, only these guys can initialize github issues.
+  # self_search: false
+  # google_analytics: G-4F49TZRQJT
+  # wordcount: false
 
-  copyright:
-    start_year: 2017
-    end_year:
-
-  highlight: agate
-
-  logo:
-    enabled: true
-    width: 50
-    height: 50
-    url: /imgs/android-chrome-512x512.png
-    gravatar: false
-    grayout: true
-
+  ### next
   favicon:
-    desktop:
-      url: /imgs/favicon.ico
-      gravatar: false
-    android:
-      url: /imgs/android-chrome-192x192.png
-      gravatar: false
-    apple:
-      url: /imgs/apple-touch-icon.png
-      gravatar: false
+    small: /imgs/favicon.ico
+    medium: imgs/android-chrome-192x192.png
+    apple_touch_icon: /imgs/apple-touch-icon.png
+    safari_pinned_tab: /imgs/android-chrome-512x512.png
+  # scheme: Muse
+  scheme: Mist
+  # scheme: Pisces
+  # scheme: Gemini
+
+  # Dark Mode
+  darkmode: true
+
+
+  # ---------------------------------------------------------------
+  # Menu Settings
+  # ---------------------------------------------------------------
+
+  # Usage: `Key: /link/ || icon`
+  # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
+  # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+  # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
+  # External url should start with http:// or https://
+  menu:
+    home: / || fa fa-home
+    about: /about/ || fa fa-user
+    #tags: /tags/ || fa fa-tags
+    #categories: /categories/ || fa fa-th
+    archives: /archives/ || fa fa-archive
+  
+  avatar:
+    # Replace the default image and set the url here.
+    url: /imgs/android-chrome-512x512.png #/images/avatar.gif
+    # If true, the avatar will be dispalyed in circle.
+    rounded: false
+    # If true, the avatar will be rotated with the cursor.
+    rotated: false
+
+  social:
+    GitHub: https://github.com/skyxv || fab fa-github
+    E-Mail: mailto:vincentyim888@gmail.com || fa fa-envelope
+
+  comments:
+    # Available values: tabs | buttons
+    style: tabs
+    # Choose a comment system to be displayed by default.
+    # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+    active: gitalk
+    # Setting `true` means remembering the comment system selected by the visitor.
+    storage: true
+    # Lazyload all comment systems.
+    lazyload: false
+    # Modify texts or order for any navs, here are some examples.
+    nav:
+      #disqus:
+      #  text: Load Disqus
+      #  order: -1
+      gitalk:
+       order: -1
+  gitalk:
+    enable: true
+    github_id: skyxv # GitHub repo owner
+    repo: blog # Repository name to store issues
+    client_id: e84a5529741e575a2d7a # GitHub Application Client ID
+    client_secret: a85723de25f3609c54f25af29d8ff8239917e478 # GitHub Application Client Secret
+    admin_user: skyxv # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+    distraction_free_mode: true # Facebook-like distraction free mode
+    # Gitalk's display language depends on user's browser or system environment
+    # If you want everyone visiting your site to see a uniform language, you can set a force language value
+    # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
+    language:
