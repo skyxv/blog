@@ -11,5 +11,5 @@ After graduating with a bachelor's degree in software engineering in late 2017, 
 - Experience with *System Design*
 - Experience with containers and container orchestration technologies (*Kubernetes*, *Docker*)
 - Invented a project release system based on *Helm* and *Gitlab*
-- Always working on *Linux* operating system, familiar with common commands
+- Always working on *Unix-like* operating system, familiar with common commands
 - Ability to effectively communicate technical concepts verbally and through design aspects
